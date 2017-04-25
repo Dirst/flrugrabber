@@ -1,0 +1,17 @@
+{
+  "name": "dirst/flrugrabber",
+  "autoload": {
+      "psr-4" : {
+          "Dirst\\Flrugrabber\\FlGrabber" : "src"
+      }
+  },
+  "repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/aszonecombr/simple_html_dom"
+    }
+  ],
+  "require": {
+      "aszone/simple_html_dom": "*"
+  }
+}
