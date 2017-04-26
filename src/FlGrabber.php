@@ -29,7 +29,7 @@ class FlGrabber {
    */
   function __construct($cookies_folder = '') {
     // set unique cookies file name.
-    $this->cookies_file = $coookes_folder . uniqid();
+    $this->cookies_file = $cookies_folder . uniqid();
 
     // Get FL.ru token.
     $this->fl_token = $this->_getFlToken();
@@ -113,7 +113,7 @@ class FlGrabber {
     ];
     
     // Get jobs page in html.
-    $jobs_html = $this->_curlRequest($filter, $headers);
+    $jobs_html = $this->_curlRequest($fields, $headers);
     return $this->_parseJobs($jobs_html);
   }
 
@@ -137,7 +137,7 @@ class FlGrabber {
    */
   private function _parseJobs($jobs_html) {
     // Create a DOM object
-    $html = new simple_html_dom();
+    $html = new \simple_html_dom();
 
     // Load HTML from a string
     $html->load($jobs_html);
@@ -171,7 +171,7 @@ class FlGrabber {
       $match = [];
       preg_match("/(document.write\(')(.+)('\))/", $one->find('script', 2)->innertext, $match);
       if (isset($match[2])) {
-        $additional = new simple_html_dom();
+        $additional = new \simple_html_dom();
         $additional = $additional->load($match[2]);
         $jobs[$id]['type'] = html_entity_decode(strip_tags($additional->find(".b-layout__txt_inline-block", 0)->innertext));
 
