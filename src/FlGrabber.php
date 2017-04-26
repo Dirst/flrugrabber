@@ -28,6 +28,11 @@ class FlGrabber {
    *   Folder on a server where created cookie will be stored
    */
   function __construct($cookies_folder = '') {
+    // Set cookies folder to current script folder.
+    if (!$cookies_folder) {
+      $cookies_folder = dirname($_SERVER['SCRIPT_FILENAME']) . "/";
+    }
+
     // set unique cookies file name.
     $this->cookies_file = $cookies_folder . uniqid();
 
