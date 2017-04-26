@@ -10,7 +10,7 @@ To instasll use this code in your composer.json
   }
   ],
   "require": {
-      "dirst/flrugrabber": "dev-master"
+      "dirst/flrugrabber": "*"
   }
 }
 ```
