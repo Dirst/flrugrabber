@@ -1,6 +1,6 @@
 {
   "name": "dirst/flrugrabber",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "autoload": {
       "psr-4" : {
           "Dirst\\Flrugrabber\\" : "src/"
