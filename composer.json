@@ -1,12 +1,13 @@
 {
-  "name": "dirst/flrugrabber",
-  "version": "1.0.1",
-  "autoload": {
-      "psr-4" : {
-          "Dirst\\Flrugrabber\\" : "src/"
-      }
-  },
-  "require": {
-      "aszone/simple_html_dom": "*"
-  }
+    "name": "dirst/flrugrabber",
+    "version": "1.0.1",
+    "autoload": {
+        "psr-4" : {
+            "Dirst\\Flrugrabber\\" : "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "aszone/simple_html_dom": "*"
+    }
 }
