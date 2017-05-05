@@ -3,6 +3,7 @@
 To instasll use this code in your composer.json
 
 ```
+{
 "repositories": [
   {
     "type": "vcs",
