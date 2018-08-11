@@ -21,3 +21,4 @@ Don't forget to enable classes autoloading in your project.
 ```php
 require __DIR__ . "/vendor/autoload.php";
 ```
+END
