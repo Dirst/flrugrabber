@@ -1,0 +1,62 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "11cb3bf4e833babf2ab4803668e4b25a",
+    "packages": [
+        {
+            "name": "aszone/simple_html_dom",
+            "version": "1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aszonecombr/simple_html_dom.git",
+                "reference": "bd5cf9722b8e7647699a2416f08abd8d43516c99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aszonecombr/simple_html_dom/zipball/bd5cf9722b8e7647699a2416f08abd8d43516c99",
+                "reference": "bd5cf9722b8e7647699a2416f08abd8d43516c99",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "simple_html_dom.php"
+                ],
+                "files": [
+                    "simple_html_dom.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Lenon Leite",
+                    "email": "lenonleite@gmail.com"
+                }
+            ],
+            "description": "Simple HTML DOM package.",
+            "homepage": "http://simplehtmldom.sourceforge.net/",
+            "keywords": [
+                "dom",
+                "php dom"
+            ],
+            "time": "2016-06-17T04:37:16+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4.0"
+    },
+    "platform-dev": []
+}
